@@ -28,8 +28,8 @@ const MyTabs = () => {
     <Tab.Navigator
       initialRouteName="HomeStack"
       screenOptions={{
-        tabBarActiveTintColor: '#e91e63',
-        // headerShown: false
+        tabBarActiveTintColor: '#6200EE',
+        //headerShown: false
       }}
     >
       <Tab.Screen 

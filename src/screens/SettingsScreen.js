@@ -3,9 +3,9 @@ import { Center, Text } from "native-base";
 
 const SettingsScreen = () => {
     return (
-    <Center bg="emerald.100" flex={1}>
-        <Text fontSize={30}>
-            This is a Setting Page
+    <Center bg="#f2ebfb" flex={1}>
+        <Text fontSize={24}>
+            This is a Wishlist Page
         </Text>              
     </Center>
     );
