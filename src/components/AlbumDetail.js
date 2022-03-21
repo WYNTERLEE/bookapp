@@ -3,8 +3,8 @@ import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable } from "native
 
 const AlbumDetail = ({ album, navigation }) => {
   return (
-    <Box marginX={1} marginBottom={2}>
-       <Box p={1} bg="#000">
+    <Box mt="16px" ml="16px" mb="16px">
+       <Box w="140">
         <Pressable 
           onPress={() => navigation.navigate('Detail', album)}
         >
@@ -16,10 +16,10 @@ const AlbumDetail = ({ album, navigation }) => {
           </Box>
         </Pressable>
       </Box>   
-      <HStack bg='#fff'>
+      <HStack>
         <VStack >
-          <Text>{album.title}</Text>
-          <Text>{album.artist}</Text>
+          <Text fontSize={16} fontFamily="Roboto" fontWeight={700} color="#131313" mt="16px">{album.title}</Text>
+          <Text fontSize={12} fontFamily="Roboto" fontWeight={"bold"} color="#929292" mt="8px" >{album.artist}</Text>
         </VStack>
       </HStack>
     </Box>
