@@ -47,13 +47,27 @@ const MyTabs = () => {
         name="Settings" 
         component={SettingsScreen} 
         options={{
+          title: "Wishlist",
+          headerTitleStyle: {
+            fontWeight: '400',
+            fontSize: 12
+          },
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons name="bookmark" color={color} size={26} />
+          ),
+        }}
+      />
+       <Tab.Screen 
+        name="My books" 
+        component={SettingsScreen} 
+        options={{
           title: "Settings",
           headerTitleStyle: {
             fontWeight: '400',
             fontSize: 20
           },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="cog" color={color} size={26} />
+            <MaterialCommunityIcons name="newspaper" color={color} size={26} />
           ),
         }}
       />
