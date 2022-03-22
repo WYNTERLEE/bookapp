@@ -8,6 +8,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import AlbumScreen from '../screens/AlbumScreen';
 import DetailScreen from '../screens/DetailScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import MybookScreen from '../screens/MybookScreen';
 
 import albumData from "../json/albums.json";
 
@@ -50,7 +51,7 @@ const MyTabs = () => {
           title: "Wishlist",
           headerTitleStyle: {
             fontWeight: '400',
-            fontSize: 12
+            fontSize: 20
           },
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="bookmark" color={color} size={26} />
@@ -59,15 +60,15 @@ const MyTabs = () => {
       />
        <Tab.Screen 
         name="My books" 
-        component={SettingsScreen} 
+        component={MybookScreen} 
         options={{
-          title: "Settings",
+          title: "My books",
           headerTitleStyle: {
             fontWeight: '400',
             fontSize: 20
           },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="newspaper" color={color} size={26} />
+            <MaterialCommunityIcons name="book-open" color={color} size={26} />
           ),
         }}
       />

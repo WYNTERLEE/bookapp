@@ -14,12 +14,12 @@ const DetailScreen = ({ route }) => {
   return (
     <Center>
       <ScrollView>
-        <AspectRatio w="100%" ratio={16 / 9}>
-          <Image
+        <Center>
+          <Image w={210} h={300}
             source={{uri: image }}
             alt='albumImage'
           />
-        </AspectRatio>
+        </Center>
         <Box bg="#fff" padding="2" margin="2">
           <Center>
             <Heading pt={1} fontSize="2xl" color='#6099E4'>Discount Now!</Heading>
