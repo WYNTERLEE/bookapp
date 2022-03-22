@@ -5,7 +5,7 @@ import StarDetail from "./StarDetail";
 const StarList = ({ list, navigation }) => {
   const renderItem = ({ item }) => <StarDetail album={item} navigation={navigation} />;
   return (
-       <Box>
+      
            <FlatList
                 horizontal={true}
                 showsHorizontalScrollIndicator={false}
@@ -13,7 +13,7 @@ const StarList = ({ list, navigation }) => {
                 renderItem={renderItem}
                 keyExtractor={item => item.title}
             />
-       </Box>
+       
   );  
 }
 

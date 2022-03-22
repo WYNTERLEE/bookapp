@@ -3,6 +3,7 @@
         
         "albumList": [
            {
+              "star":false,
               "title": "Fashionopolis",
               "artist": "Dana Thomas",
               "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
@@ -13,6 +14,7 @@
               "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
            },
            {
+              "star":false,
               "title": "Chanel",
               "artist": "Patrick Mauriès",
               "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
@@ -23,6 +25,7 @@
               "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
            },
            {
+              "star":false,
               "title": "Calligraphy",
               "artist": "June & Lucy",
               "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
@@ -35,6 +38,7 @@
 
            "starList":[
            {
+            "star":true,
             "title": "Yves Saint Laurent",
             "artist": "Suzy Menkes",
             "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
@@ -50,6 +54,7 @@
             "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
          },
          {
+            "star":true,
             "title": "The Book of Signs",
             "artist": "Rudolf Koch",
             "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
@@ -65,6 +70,7 @@
             "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
          },
          {
+            "star":true,
             "title": "Stitched Up",
             "artist": "Tansy E. Hoskins",
             "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",

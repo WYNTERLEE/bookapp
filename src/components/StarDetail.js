@@ -18,11 +18,11 @@ const StarDetail = ({ album, navigation }) => {
       </Box>   
       <VStack>
         <HStack mt="16.5px">
-            <Image h="13" w="14" source={{uri: album.star1}}/>
-            <Image h="13" w="14" source={{uri: album.star2}}/>
-            <Image h="13" w="14" source={{uri: album.star3}}/>
-            <Image h="13" w="14" source={{uri: album.star4}}/>
-            <Image h="13" w="14" source={{uri: album.star5}}/>
+            <Image h="13" w="14" source={{uri: album.star1}} alt='starImage'/>
+            <Image h="13" w="14" ml="4px" source={{uri: album.star2}} alt='starImage'/>
+            <Image h="13" w="14" ml="4px" source={{uri: album.star3}} alt='starImage'/>
+            <Image h="13" w="14" ml="4px" source={{uri: album.star4}} alt='starImage'/>
+            <Image h="13" w="14" ml="4px" source={{uri: album.star5}} alt='starImage'/>
         </HStack>
         <VStack >
           <Text fontSize={16} fontFamily="Roboto" fontWeight={700} color="#131313" mt="16px">{album.title}</Text>

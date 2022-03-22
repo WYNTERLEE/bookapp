@@ -6,6 +6,11 @@ import { Center, ScrollView, Box, AspectRatio, Text, Heading, Image, Button, VSt
 const DetailScreen = ({ route }) => {
   const { title, 
     artist,
+    star1,
+    star2,
+    star3,
+    star4,
+    star5,
     price,
     score,
     fullscore,
@@ -26,14 +31,21 @@ const DetailScreen = ({ route }) => {
             <Text fontSize="24px" fontWeight={"bold"}>
                 {title}
             </Text>
-            <Text fontSize="14px" fontWeight={"bold" } color="#929292">             
+            <Text fontSize="14px"  color="#929292">             
                 {artist}
             </Text>
         </Center>
         <Center>
           <HStack>
-            <Heading pt={1} fontSize="14px" color='#6099E4'>Discount Now!</Heading>
-            <Heading pt={1} fontSize="14px">{'\t'}{score}<Text  ml="13px" color="#929292">{'\t'}/</Text><Text color="#929292">{'\t'}{fullscore}</Text></Heading>
+            {/* {star?(<Image  w={13} h={14} source={{uri:star1}}/>):null}, */}
+            <HStack mt="8.5px">
+                <Image  w={14} h={13} source={{uri:star1}} alt='starImage'/>
+                <Image  w={14} h={13} ml="4px" source={{uri:star2}} alt='starImage'/>
+                <Image  w={14} h={13} ml="4px" source={{uri:star3}} alt='starImage'/>
+                <Image  w={14} h={13} ml="4px" source={{uri:star4}} alt='starImage'/>
+                <Image  w={14} h={13} ml="4px" source={{uri:star5}} alt='starImage'/>
+            </HStack>
+            <Heading mt="8.5px" fontSize="14px">{'\t'}{score}<Text  ml="13px" color="#929292">{'\t'}/</Text><Text color="#929292">{'\t'}{fullscore}</Text></Heading>
           </HStack>
           <Box  mt="16px" ml="20px" mr="20px" w={320}>
             <Text lineHeight="24px" letterSpacing="0.018em" textAlign="center">{description}</Text>
@@ -49,7 +61,6 @@ const DetailScreen = ({ route }) => {
             <Text color="#fff" fontSize="14px" letterSpacing="0.08em">BUY NOW FOR ${price}</Text>
           </Button>   
         </Center>
-        
       </ScrollView>      
     </Center>
 
