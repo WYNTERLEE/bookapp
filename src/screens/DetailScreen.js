@@ -24,10 +24,10 @@ const DetailScreen = ({ route }) => {
         </Center>
         <Center mt="28px">
             <Text fontSize="24px" fontWeight={"bold"}>
-                {artist}
+                {title}
             </Text>
             <Text fontSize="14px" fontWeight={"bold" } color="#929292">             
-                {title}
+                {artist}
             </Text>
         </Center>
         <Center>

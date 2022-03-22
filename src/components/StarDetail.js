@@ -1,11 +1,9 @@
 import React from "react";
 import { Box, HStack, VStack, AspectRatio, Text, Image, Pressable } from "native-base"
 
-const AlbumDetail = ({ album, navigation }) => {
+const StarDetail = ({ album, navigation }) => {
   return (
-    
-    <Box  mt="16px" ml="16px" mb="16px">
-       
+    <Box mt="16px" ml="16px" mb="16px">
        <Box w="140">
         <Pressable 
           onPress={() => navigation.navigate('Detail', album)}
@@ -18,13 +16,20 @@ const AlbumDetail = ({ album, navigation }) => {
           </Box>
         </Pressable>
       </Box>   
-      <HStack>
+      <VStack>
+        <HStack mt="16.5px">
+            <Image h="13" w="14" source={{uri: album.star1}}/>
+            <Image h="13" w="14" source={{uri: album.star2}}/>
+            <Image h="13" w="14" source={{uri: album.star3}}/>
+            <Image h="13" w="14" source={{uri: album.star4}}/>
+            <Image h="13" w="14" source={{uri: album.star5}}/>
+        </HStack>
         <VStack >
           <Text fontSize={16} fontFamily="Roboto" fontWeight={700} color="#131313" mt="16px">{album.title}</Text>
           <Text fontSize={12} fontFamily="Roboto" fontWeight={"bold"} color="#929292" mt="8px" >{album.artist}</Text>
         </VStack>
-      </HStack>
+      </VStack>
     </Box>
   )};
 
-export default AlbumDetail;
+export default StarDetail;

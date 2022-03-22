@@ -1,34 +1,84 @@
-{
-    "albumTitle": "Taylor Swift",
-    "albumList": [
-       {
-          "title": "Fashionopolis",
-          "artist": "Dana Thomas",
-          "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
-          "image":"https://github.com/WYNTERLEE/react_img/blob/main/img_book_fashinopolis.png?raw=true",
-          "price": 46.99,
-          "score":"4.0",
-          "fullscore":"5.0",
-          "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
-       },
-       {
-          "title": "Chanel",
-          "artist": "Patrick Mauriès",
-          "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
-          "image": "https://github.com/WYNTERLEE/react_img/blob/main/img_book_chanel.png?raw=true",
-          "price": 46.99,
-          "score":"4.0 ",
-          "fullscore":"5.0",
-          "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
-       },
-       {
-          "title": "Calligraphy",
-          "artist": "June & Lucy",
-          "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
-          "image": "https://github.com/WYNTERLEE/react_img/blob/main/img_book_calligraphy.png?raw=true",
-          "price": 46.99,
-          "score":"4.0",
-          "fullscore":"5.0",
-          "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
-       }
- ]}
+
+   {
+        
+        "albumList": [
+           {
+              "title": "Fashionopolis",
+              "artist": "Dana Thomas",
+              "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
+              "image":"https://github.com/WYNTERLEE/react_img/blob/main/img_book_fashinopolis.png?raw=true",
+              "price": 46.99,
+              "score":"4.0",
+              "fullscore":"5.0",
+              "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
+           },
+           {
+              "title": "Chanel",
+              "artist": "Patrick Mauriès",
+              "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
+              "image": "https://github.com/WYNTERLEE/react_img/blob/main/img_book_chanel.png?raw=true",
+              "price": 46.99,
+              "score":"4.0 ",
+              "fullscore":"5.0",
+              "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
+           },
+           {
+              "title": "Calligraphy",
+              "artist": "June & Lucy",
+              "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
+              "image": "https://github.com/WYNTERLEE/react_img/blob/main/img_book_calligraphy.png?raw=true",
+              "price": 46.99,
+              "score":"4.0",
+              "fullscore":"5.0",
+              "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
+           }],
+
+           "starList":[
+           {
+            "title": "Yves Saint Laurent",
+            "artist": "Suzy Menkes",
+            "url": "https://www.amazon.com/Taylor-Swift/dp/B0014I4KH6",
+            "price": 46.99,
+            "star1":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star2":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star3":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star4":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star5":"https://github.com/WYNTERLEE/react_img/blob/main/Star-white.png?raw=true",
+            "image":"https://github.com/WYNTERLEE/react_img/blob/main/img_book_ysl.png?raw=true",
+            "score":"4.0",
+            "fullscore":"5.0",
+            "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
+         },
+         {
+            "title": "The Book of Signs",
+            "artist": "Rudolf Koch",
+            "url": "https://www.amazon.com/Fearless-Enhanced-Taylor-Swift/dp/B001EYGOEM",
+            "star1":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star2":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star3":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star4":"https://github.com/WYNTERLEE/react_img/blob/main/Star-white.png?raw=true",
+            "star5":"https://github.com/WYNTERLEE/react_img/blob/main/Star-white.png?raw=true",
+            "image":"https://github.com/WYNTERLEE/react_img/blob/main/img_book_tbos.png?raw=true",
+            "price": 46.99,
+            "score":"4.0 ",
+            "fullscore":"5.0",
+            "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
+         },
+         {
+            "title": "Stitched Up",
+            "artist": "Tansy E. Hoskins",
+            "url": "https://www.amazon.com/Speak-Now-Taylor-Swift/dp/B003WTE886",
+            "star1":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star2":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star3":"https://github.com/WYNTERLEE/react_img/blob/main/Star-yellow.png?raw=true",
+            "star4":"https://github.com/WYNTERLEE/react_img/blob/main/Star-white.png?raw=true",
+            "star5":"https://github.com/WYNTERLEE/react_img/blob/main/Star-white.png?raw=true",
+            "image":"https://github.com/WYNTERLEE/react_img/blob/main/img_book_stitchedup.png?raw=true",
+            "price": 46.99,
+            "score":"4.0",
+            "fullscore":"5.0",
+            "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
+         }]
+     }
+     
+    
