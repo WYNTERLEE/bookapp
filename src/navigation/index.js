@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Image,HStack,Box,Pressable,TouchableOpacity} from "native-base";
+import { Image,HStack,Box,Pressable,IconButton,Icon} from "native-base";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {useState}  from 'react';
 import AlbumScreen from '../screens/AlbumScreen';
@@ -17,14 +17,17 @@ function HomeNav() {
     return (
         <Box>
         <HStack >
-            <Image w="18px" h="12px" ml="6px"
+            <Image w="18px" h="12px" ml="6px" mt="12px"
                 source={{uri: 'https://github.com/WYNTERLEE/react_img/blob/main/icon.png?raw=true'}}
                 alt="icon"
             />
-            <Image  w="17.5px" h="17.5px"  ml="310px"
-                source={{uri: 'https://github.com/WYNTERLEE/react_img/blob/main/icon-search.png?raw=true'}}
-                alt="icon"
-            />
+            <Box ml="303px">
+            <IconButton colorScheme="indigo" _icon={{
+                as: MaterialCommunityIcons,
+                name: "magnify",
+                size: "sm"
+            }} />
+            </Box>
         </HStack>
         </Box>
         
@@ -55,7 +58,7 @@ const MyTabs = () => {
           title: "Home",
           headerShown: false,
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="home" color={color} size={26} />
+            <MaterialCommunityIcons name="home" color={color} size={24} />
           ),
         }}
       />
@@ -69,7 +72,7 @@ const MyTabs = () => {
             fontSize: 20
           },
           tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="bookmark" color={color} size={26} />
+            <MaterialCommunityIcons name="bookmark" color={color} size={24} />
           ),
         }}
       />
@@ -83,7 +86,7 @@ const MyTabs = () => {
                 fontSize: 20
             },
             tabBarIcon: ({ color }) => (
-                <MaterialCommunityIcons name="book-open" color={color} size={26} />
+                <MaterialCommunityIcons name="book-open" color={color} size={24} />
             ),
             }}
       />
