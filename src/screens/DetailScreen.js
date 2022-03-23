@@ -1,9 +1,9 @@
 import React from 'react';
 import { Linking } from 'react-native';
-import { Center, ScrollView, Box, AspectRatio, Text, Heading, Image, Button, VStack,HStack } from "native-base";
-
+import { Center, ScrollView, Box, AspectRatio, Text, Heading, Image, Button, VStack,HStack,TouchableOpacity } from "native-base";
 
 const DetailScreen = ({ route }) => {
+    
   const { title, 
     artist,
     star1,
@@ -18,6 +18,7 @@ const DetailScreen = ({ route }) => {
     image,
     description
   } = route.params;
+
   return (
     <Center bgColor="#fff" flex={1}>
       <ScrollView>
@@ -37,7 +38,6 @@ const DetailScreen = ({ route }) => {
         </Center>
         <Center>
           <HStack>
-            {/* {star?(<Image  w={13} h={14} source={{uri:star1}}/>):null}, */}
             <HStack mt="8.5px">
                 <Image  w={14} h={13} source={{uri:star1}} alt='starImage'/>
                 <Image  w={14} h={13} ml="4px" source={{uri:star2}} alt='starImage'/>

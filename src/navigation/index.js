@@ -2,15 +2,13 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { Image,HStack,Box} from "native-base";
+import { Image,HStack,Box,Pressable,TouchableOpacity} from "native-base";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-
+import {useState}  from 'react';
 import AlbumScreen from '../screens/AlbumScreen';
 import DetailScreen from '../screens/DetailScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import MybookScreen from '../screens/MybookScreen';
-
-import albumData from "../json/albums.json";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -32,14 +30,7 @@ function HomeNav() {
         
     );
 }
-function DetailNav() {
-    return (
-        
-        <MaterialCommunityIcons name="bookmark-outline"  size={26} />
-            
-        
-    );
-}
+
 const Navigation = () => {
   return (
     <NavigationContainer>
@@ -54,7 +45,7 @@ const MyTabs = () => {
       initialRouteName="HomeStack"
       screenOptions={{
         tabBarActiveTintColor: '#6200EE',
-        // headerShown: false,
+        //headerShown: false,
       }}
     >
       <Tab.Screen 
@@ -83,29 +74,33 @@ const MyTabs = () => {
         }}
       />
        <Tab.Screen 
-        name="My books" 
-        component={MybookScreen} 
-        options={{
-          title: "My books",
-          headerTitleStyle: {
-            fontWeight: '400',
-            fontSize: 20
-          },
-          tabBarIcon: ({ color }) => (
-            <MaterialCommunityIcons name="book-open" color={color} size={26} />
-          ),
-        }}
+            name="My books" 
+            component={MybookScreen} 
+            options={{
+            title: "My books",
+            headerTitleStyle: {
+                fontWeight: '400',
+                fontSize: 20
+            },
+            tabBarIcon: ({ color }) => (
+                <MaterialCommunityIcons name="book-open" color={color} size={26} />
+            ),
+            }}
       />
     </Tab.Navigator>
   );
 }
 
 const HomeStack = () => {
+    const [save, setSave] = useState(true);
+    // const saveIcon = () => {
+        
+    // };
   return (
     <Stack.Navigator
-      // screenOptions={{
-      //   headerShown: false
-      // }}
+    //   screenOptions={{
+    //     headerShown: false,
+    //   }}
     >
       <Stack.Screen
         name="Home"
@@ -118,21 +113,33 @@ const HomeStack = () => {
       <Stack.Screen
         name="Detail"
         component={DetailScreen}
-        options={({ route }) => ({
-        //   headerBackImageSource:(props) => <DetailNav {...props} /> ,
-          headerRight:(props) => <DetailNav {...props} /> ,
+        options={({ route,navigation }) => ({
+        //   headerShown: false,
+          headerTitle:" ",
           headerShadowVisible:false,
-        //   headerTitle: (props) => <DetailNav {...props} /> ,
-        //   headerBackImageSource:() => (<MaterialCommunityIcons name="book-open" size={26} />),
           headerStyle: {
-            
             backgroundColor: '#fff',
           },
-          headerTintColor: '#000',
+         
+          headerTintColor: '#fff',
           headerTitleStyle: {
+              
             fontWeight: '400',
             fontSize: 20
           },
+          headerLeft: () => (
+            <Pressable   onPress={() => {navigation.goBack();}}   >
+                <MaterialCommunityIcons name="chevron-left" color={'black'} size={26} />
+            </Pressable>
+            ),
+           headerRight: () => (
+                <Pressable onPress={() =>setSave(!save)}>
+                {/* {(save?"qqq":"dddq" )} */}
+                {(save?<MaterialCommunityIcons name={'bookmark-outline'} color={'black'} size={24} />:<MaterialCommunityIcons name={'bookmark'} color={'#6200EE'} size={24} /> )}
+                {/* <MaterialCommunityIcons name={save? "bookmark-outline":"bookmark"}/> */}
+                </Pressable>
+            ), 
+            
         })}
       />
     </Stack.Navigator>
