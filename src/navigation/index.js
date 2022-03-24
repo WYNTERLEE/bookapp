@@ -57,6 +57,8 @@ const MyTabs = () => {
         options={{
           title: "Home",
           headerShown: false,
+          tabBarIconStyle:{marginTop:5},
+          tabBarLabelStyle:{marginBottom:5},
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="home" color={color} size={24} />
           ),
@@ -71,6 +73,8 @@ const MyTabs = () => {
             fontWeight: '400',
             fontSize: 20
           },
+          tabBarIconStyle:{marginTop:5},
+          tabBarLabelStyle:{marginBottom:5},
           tabBarIcon: ({ color }) => (
             <MaterialCommunityIcons name="bookmark" color={color} size={24} />
           ),
@@ -85,6 +89,8 @@ const MyTabs = () => {
                 fontWeight: '400',
                 fontSize: 20
             },
+            tabBarIconStyle:{marginTop:5},
+            tabBarLabelStyle:{marginBottom:5},
             tabBarIcon: ({ color }) => (
                 <MaterialCommunityIcons name="book-open" color={color} size={24} />
             ),
